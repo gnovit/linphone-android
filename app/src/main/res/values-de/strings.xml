@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="service_description">Erforderlich, um Anrufe im Hintergrund erhalten zu können</string>
@@ -415,7 +415,7 @@
     <string name="assistant_remote_provisioning">Konfiguration extern abrufen</string>
     <string name="assistant_ec_calibration">Kalibrierung des Echounterdrückers läuft</string>
     <string name="assistant_phone_number_info_title">Wofür wird meine Rufnummer verwendet\?</string>
-    <string name="assistant_read_and_agree_terms">Ich akzeptiere Belledonne Communications\' %1$s und %2$s</string>
+    <string name="assistant_read_and_agree_terms">Ich akzeptiere Gnovit Corporate Communications Solutions\' %1$s und %2$s</string>
     <string name="assistant_generic_account_warning">Einige Funktionen erfordern ein &appName;-Konto, z. B. Gruppen- oder kurzlebige Nachrichten.
 \n
 \nDiese Funktionen bleiben bei Benutzung von Drittanbieter-SIP-Konten unsichtbar.

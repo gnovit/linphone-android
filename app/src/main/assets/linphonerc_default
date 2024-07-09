@@ -41,4 +41,9 @@ conference_layout=1
 server_url=https://subscribe.linphone.org:444/inapp.php
 purchasable_items_ids=test_account_subscription
 
+[Proxy_config_0]
+force_register_on_push=1
+push_notification_allowed=1
+remote_push_notification_allowed=1
+
 ## End of default rc

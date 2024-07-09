@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingQuantity">
     <string name="content_description_copy_conference_address">Kopírovat adresu schůzky</string>
@@ -743,7 +743,7 @@
 \nV adresáři uvidíte, kdo používá &appName;, a vaši přátelé budou vědět, že vás mohou zastihnout i na &appName;.
 \n"</string>
     <string name="assistant_general_terms">podmínky používání</string>
-    <string name="assistant_read_and_agree_terms">Přijímám %1$s a %2$s společnosti Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Přijímám %1$s a %2$s společnosti Gnovit Corporate Communications Solutions</string>
     <string name="assistant_generic_account_warning">Některé funkce vyžadují účet &appName;, například skupinové zprávy nebo mizející zprávy.
 \n
 \nTyto funkce jsou při registraci účtu SIP třetí strany skryté.

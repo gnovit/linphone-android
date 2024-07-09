@@ -129,7 +129,7 @@
                 <data android:scheme="sips" />
                 <data android:scheme="linphone" />
                 <data android:scheme="sip-linphone" />
-                <data android:scheme="linphone-config" />
+                <data android:scheme="vozer-config" />
             </intent-filter>
 
             <intent-filter>
@@ -222,6 +222,7 @@
         <receiver android:name=".core.CorePushReceiver"
             android:exported="false">
             <intent-filter>
+                <action android:name="org.vozer.core.action.PUSH_RECEIVED"/>
                 <action android:name="org.linphone.core.action.PUSH_RECEIVED"/>
             </intent-filter>
         </receiver>

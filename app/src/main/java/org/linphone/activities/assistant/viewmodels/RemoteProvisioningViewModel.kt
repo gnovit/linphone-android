@@ -76,6 +76,9 @@ class RemoteProvisioningViewModel : ViewModel() {
 
     fun fetchAndApply() {
         val url = urlToFetch.value.orEmpty()
+        /*val baseUrl = "https://provision.vozer.app/"
+        val token = urlToFetch.value.orEmpty()
+        val url = baseUrl + token*/
         coreContext.core.provisioningUri = url
         Log.w("[Assistant] [Remote Provisioning] Url set to [$url], restarting Core")
         fetchInProgress.value = true

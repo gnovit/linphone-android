@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="logs_upload_failure">Nem sikerült feltölteni a naplókat!</string>
@@ -156,7 +156,7 @@
     <string name="assistant_phone_number_link_info_content_already_account">Telefonszámát csak egy &appName;-fiókjával használhatja.\n\nHa már összekapcsolta telefonszámát egy másik fiókkal, de inkább ezt használja, egyszerűen kapcsolja össze most, és a telefonszám önműködően átkerül erre a fiókra.</string>
     <string name="assistant_error_username_already_exists">Ez a felhasználónév már foglalt</string>
     <string name="assistant_linphone_account">Használja a(z) &appName;-fiókját</string>
-    <string name="assistant_read_and_agree_terms">Elfogadom a Belledonne Communications %1$s és %2$s</string>
+    <string name="assistant_read_and_agree_terms">Elfogadom a Gnovit Corporate Communications Solutions %1$s és %2$s</string>
     <string name="assistant_error_phone_number_invalid_characters">Itt csak számjegyek megengedettek</string>
     <string name="assistant_error_phone_number_already_exists">Már van egy fiók, amely ezt a számot használja</string>
     <string name="assistant_error_username_invalid_characters">Érvénytelen karaktereket talált</string>

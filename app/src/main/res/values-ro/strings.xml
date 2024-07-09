@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="service_auto_start_description">&appName; a fost pornit automat</string>
@@ -457,7 +457,7 @@
 \n
 \nDacă v-ați conectat deja numărul la un alt cont, dar preferați să îl folosiți pe acesta, pur și simplu conectați-l acum și numărul dumneavoastră va fi mutat automat în acest cont.</string>
     <string name="assistant_general_terms">termeni de utilizare</string>
-    <string name="assistant_read_and_agree_terms">Accept %1$s și %2$s de la Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Accept %1$s și %2$s de la Gnovit Corporate Communications Solutions</string>
     <string name="assistant_generic_account_warning">Unele caracteristici necesită un cont &appName;, cum ar fi mesageria de grup sau mesageria efemeră.
 \n
 \nAceste caracteristici sunt ascunse atunci când vă înregistrați cu un cont SIP al unei terțe părți.

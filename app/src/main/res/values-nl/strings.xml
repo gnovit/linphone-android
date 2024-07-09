@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="service_auto_start_description">&appName; is automatisch gestart</string>

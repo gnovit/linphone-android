@@ -9,9 +9,11 @@ plugins {
 def appVersionName = "5.2.5"
 def appVersionCode = 52005
 
-def packageName = "org.linphone"
+def packageName = "org.vozer"
 
 def firebaseAvailable = new File(projectDir.absolutePath +'/google-services.json').exists()
+// Log the result to the console (optional)
+println "xxxxxxx Varun Firebase available: ${firebaseAvailable}"
 
 def crashlyticsAvailable = new File(projectDir.absolutePath +'/google-services.json').exists() && new File(LinphoneSdkBuildDir + '/libs/').exists() && new File(LinphoneSdkBuildDir + '/libs-debug/').exists()
 
@@ -99,6 +101,8 @@ android {
 
         var enableFirebaseService = "false"
         if (firebaseAvailable) {
+            // Log the result to the console (optional)
+            println "xxxxxx Varun xFirebase available: ${firebaseAvailable}"
             enableFirebaseService = "true"
         }
 
@@ -209,6 +213,7 @@ dependencies {
     implementation 'androidx.media:media:1.6.0'
     implementation "androidx.security:security-crypto-ktx:1.1.0-alpha06"
     implementation "androidx.window:window:1.2.0"
+    implementation files('D:\\Vozer\\newsdk\\linphone-sdk-android-5.4.0-alpha.249+310c3ca.aar')
 
     def emoji_version = "1.4.0"
     implementation "androidx.emoji2:emoji2:$emoji_version"
@@ -251,7 +256,6 @@ dependencies {
         implementation 'com.google.firebase:firebase-messaging'
     }
 
-    implementation 'org.linphone:linphone-sdk-android:5.3+'
 
     // Only enable leak canary prior to release
     // debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'

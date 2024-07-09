@@ -558,9 +558,12 @@ class ConferenceViewModel : ViewModel() {
         speakingParticipantFound.value = false
         speakingParticipantVideoEnabled.value = false
 
-        val conferenceInfo = conference.core.findConferenceInformationFromUri(
-            conference.conferenceAddress
-        )
+        val conferenceAddress: Address? = conference.conferenceAddress
+        val conferenceInfo = if (conferenceAddress != null) {
+            conference.core.findConferenceInformationFromUri(conferenceAddress)
+        } else {
+            throw IllegalArgumentException("Conference address is null")
+        }
         var allSpeaker = true
         for (info in conferenceInfo?.participantInfos.orEmpty()) {
             if (info.role == Participant.Role.Listener) {
@@ -668,9 +671,15 @@ class ConferenceViewModel : ViewModel() {
             "[Conference] New participant device found: ${device.name} (${device.address.asStringUriOnly()})"
         )
 
-        val conferenceInfo = conference.core.findConferenceInformationFromUri(
-            conference.conferenceAddress
-        )
+        val conferenceAddress: Address? = conference.conferenceAddress
+        val conferenceInfo = if (conferenceAddress != null) {
+            conference.core.findConferenceInformationFromUri(conferenceAddress)
+        } else {
+            // Handle null case, maybe provide a default value or throw an exception
+            // For example:
+            throw IllegalArgumentException("Conference address is null")
+        }
+
         val info = conferenceInfo?.participantInfos?.find {
             it.address.weakEqual(device.address)
         }

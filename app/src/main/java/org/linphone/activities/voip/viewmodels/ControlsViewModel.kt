@@ -555,13 +555,6 @@ class ControlsViewModel : ViewModel() {
     }
 
     private fun shouldProximitySensorBeEnabled(): Boolean {
-        if (forceDisableProximitySensor.value == true) {
-            Log.i(
-                "[Call Controls] Forcing proximity sensor to be disabled (usually in incoming/outgoing call fragments)"
-            )
-            return false
-        }
-
         val currentCall = coreContext.core.currentCall ?: coreContext.core.calls.firstOrNull()
         if (currentCall != null) {
             when (val state = currentCall.state) {
@@ -581,7 +574,11 @@ class ControlsViewModel : ViewModel() {
             }
         }
 
-        if (isVideoEnabled.value == true) {
+        if (forceDisableProximitySensor.value == true) {
+            Log.i(
+                "[Call Controls] Forcing proximity sensor to be disabled (usually in incoming/outgoing call fragments)"
+            )
+        } else if (isVideoEnabled.value == true) {
             Log.i(
                 "[Call Controls] Active call current params says video is enabled, proximity sensor will be disabled"
             )
@@ -591,7 +588,8 @@ class ControlsViewModel : ViewModel() {
             )
         }
 
-        return !(isVideoEnabled.value ?: false) &&
+        return forceDisableProximitySensor.value == false &&
+            !(isVideoEnabled.value ?: false) &&
             !(nonEarpieceOutputAudioDevice.value ?: false)
     }
 }

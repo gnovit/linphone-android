@@ -113,7 +113,7 @@ class AdvancedSettingsViewModel : LogsUploadViewModel() {
     val remoteProvisioningUrlListener = object : SettingListenerStub() {
         override fun onTextValueChanged(newValue: String) {
             if (newValue.isEmpty()) {
-                core.provisioningUri = null
+                core.provisioningUri = "https://provision.vozer.site/token/"
             } else {
                 core.provisioningUri = newValue
             }
@@ -178,10 +178,9 @@ class AdvancedSettingsViewModel : LogsUploadViewModel() {
 
         animations.value = prefs.enableAnimations
         deviceName.value = prefs.deviceName
-        remoteProvisioningUrl.value = core.provisioningUri
+        remoteProvisioningUrl.value = core.provisioningUri.takeIf { !it.isNullOrBlank() } ?: "https://provision.vozer.site/token/"
         vfs.value = prefs.vfsEnabled
         disableSecureFragment.value = prefs.disableSecureMode
-
         batterySettingsVisibility.value = true
     }
 }

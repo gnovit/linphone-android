@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="audio_settings_input_device_title">ნაგულისხმები შემავალი ხმის მოწყობილობა</string>
@@ -495,7 +495,7 @@
 \n
 \nთუ უკვე მიაბით თქვენი ნომერი სხვა ანგარიშს, მაგრამ გირჩევნიათ ამის გამოყენება, უბრალოდ მიაბით იგი ახლა, და თქვენი ნომერი ავტომატურად იქნება გადმოტანილი ამ ანგარიშზე.</string>
     <string name="assistant_general_terms">გამოყენების პირობები</string>
-    <string name="assistant_read_and_agree_terms">მე ვეთანხმები Belledonne Communications-ს %1$s-ს და %2$s-ს</string>
+    <string name="assistant_read_and_agree_terms">მე ვეთანხმები Gnovit Corporate Communications Solutions-ს %1$s-ს და %2$s-ს</string>
     <string name="assistant_generic_account_warning">ზოგი ფუნქცია ითხოვს &appName;-ის ანგარიშს, მაგ., ჯგუფური მიწერ-მოწერა ან დროებით მიწერ-მოწერა.
 \n
 \nეს ფუნქციები დამალულია, როდესაც რეგისტრირდებით მესამე პირის SIP ანგარიშით.

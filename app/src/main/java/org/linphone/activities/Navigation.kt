@@ -19,6 +19,7 @@
  */
 package org.linphone.activities
 
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.core.os.bundleOf
@@ -1053,11 +1054,15 @@ internal fun WelcomeFragment.navigateToEmailAccountCreation() {
 
 internal fun WelcomeFragment.navigateToPhoneAccountCreation() {
     if (findNavController().currentDestination?.id == R.id.welcomeFragment) {
-        findNavController().navigate(
-            R.id.action_welcomeFragment_to_phoneAccountCreationFragment,
-            null,
-            popupTo()
-        )
+        // findNavController().navigate(
+        //    R.id.action_welcomeFragment_to_phoneAccountCreationFragment,
+        //    null,
+        //    popupTo()
+        // )
+        var url = "https://vozer.site/create-account"
+        var intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
     }
 }
 

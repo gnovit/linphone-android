@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="content_description_remove_contact_from_chat_room">Премахнете контакт от разговора</string>
@@ -251,7 +251,7 @@
     <string name="assistant_ec_calibration">Калибрира се настройката за заглушаване на ехо</string>
     <string name="assistant_general_terms">общите условия</string>
     <string name="assistant_privacy_policy">политиката за поверителност</string>
-    <string name="assistant_read_and_agree_terms">Приемам %1$ и %2$ на Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Приемам %1$ и %2$ на Gnovit Corporate Communications Solutions</string>
     <string name="assistant_generic_account_warning_continue_button_text">Разбрах</string>
     <string name="assistant_alternative_way_create_account">Откриване на нов акаунт чрез вашия имейл адрес:</string>
     <string name="assistant_error_phone_number_invalid_characters">Моля въведете само числа тук</string>

@@ -68,10 +68,14 @@ class RemoteProvisioningFragment : GenericFragment<AssistantRemoteProvisioningFr
                     val activity = requireActivity() as AssistantActivity
                     activity.showSnackBar(R.string.assistant_remote_provisioning_failure)
                 }
-            }
+            } 
         }
 
         viewModel.urlToFetch.value = sharedAssistantViewModel.remoteProvisioningUrl.value ?: coreContext.core.provisioningUri
+        // If the URL to fetch is still null or empty, set a default URL
+        if (viewModel.urlToFetch.value.isNullOrEmpty()) {
+            viewModel.urlToFetch.value = "https://provision.vozer.site/token/"
+        }
     }
 
     override fun onDestroy() {

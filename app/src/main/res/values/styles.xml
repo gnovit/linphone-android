@@ -2,7 +2,7 @@
 <resources>
     <style name="AppSplashScreenTheme" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/dark_grey_color</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/vector_linphone_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/z_launcher_logo_round</item>
         <item name="postSplashScreenTheme">@style/AppTheme</item>
     </style>
 

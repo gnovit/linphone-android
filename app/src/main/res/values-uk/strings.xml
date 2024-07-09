@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="service_description">Це потрібно для отримання дзвінків у фоновому режимі</string>
@@ -194,7 +194,7 @@
     <string name="assistant_remote_provisioning">Отримати віддалену конфігурацію</string>
     <string name="assistant_ec_calibration">Виконується калібрування ехокомпенсатора</string>
     <string name="assistant_general_terms">умови використання</string>
-    <string name="assistant_read_and_agree_terms">Я приймаю %1$s і %2$s Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Я приймаю %1$s і %2$s Gnovit Corporate Communications Solutions</string>
     <string name="assistant_generic_account_warning_continue_button_text">Я розумію</string>
     <string name="assistant_error_username_already_exists">Ім\'я користувача вже використовується</string>
     <string name="assistant_error_username_invalid_characters">Знайдено недійсні символи</string>

@@ -840,7 +840,7 @@ class NotificationsManager(private val context: Context) {
             .setWhen(System.currentTimeMillis())
             .setShowWhen(true)
             .setNumber(missedCallCount)
-            .setColor(ContextCompat.getColor(context, R.color.notification_led_color))
+            .setColor(ContextCompat.getColor(context, R.color.primary_color))
 
         if (!corePreferences.preventInterfaceFromShowingUp) {
             builder.setContentIntent(pendingIntent)

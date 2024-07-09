@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="service_description">Необходимо для приема звонков в фоновом режиме</string>
@@ -165,7 +165,7 @@
 \n"</string>
     <string name="assistant_general_terms">условия использования</string>
     <string name="assistant_privacy_policy">политику конфиденциальности</string>
-    <string name="assistant_read_and_agree_terms">Я принимаю %1$s и %2$s от Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Я принимаю %1$s и %2$s от Gnovit Corporate Communications Solutions</string>
     <string name="assistant_error_phone_number_invalid_characters">Разрешены только цифры</string>
     <string name="assistant_error_username_already_exists">Имя пользователя уже используется</string>
     <string name="assistant_error_phone_number_already_exists">Аккаунт с этим номером уже существует</string>

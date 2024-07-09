@@ -580,7 +580,7 @@ class CorePreferences constructor(private val context: Context) {
         get() = config.getBool("app", "assistant_create_account", true)
 
     val showLinphoneLogin: Boolean
-        get() = config.getBool("app", "assistant_linphone_login", true)
+        get() = config.getBool("app", "assistant_linphone_login", false)
 
     val showGenericLogin: Boolean
         get() = config.getBool("app", "assistant_generic_login", true)

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="service_description">è richiesto per ricevere chiamate quando l\'app è in background</string>
@@ -477,7 +477,7 @@
 \n
 \nVedrai nella tua rubrica chi sta utilizzando &appName; ed i tuoi amici sapranno che ti potranno trovare su &appName;.
 \n"</string>
-    <string name="assistant_read_and_agree_terms">Accetto i %1$s and %2$s di Belledonne Communications</string>
+    <string name="assistant_read_and_agree_terms">Accetto i %1$s and %2$s di Gnovit Corporate Communications Solutions</string>
     <string name="assistant_generic_account_warning">Alcune funzioni richiedono un account &appName;, come le chat di gruppo o i messaggi effimeri.
 \n
 \nQueste funzioni verranno nascoste quando ti registri con un SIP account di terze parti.

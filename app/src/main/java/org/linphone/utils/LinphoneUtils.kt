@@ -93,9 +93,14 @@ class LinphoneUtils {
 
         fun getConferenceSubject(conference: Conference): String? {
             return if (conference.subject.isNullOrEmpty()) {
-                val conferenceInfo = coreContext.core.findConferenceInformationFromUri(
-                    conference.conferenceAddress
-                )
+                val conferenceAddress: Address? = conference.conferenceAddress
+                val conferenceInfo = if (conferenceAddress != null) {
+                    coreContext.core.findConferenceInformationFromUri(conferenceAddress)
+                } else {
+                    // Handle null case, maybe provide a default value or throw an exception
+                    throw IllegalArgumentException("Conference address is null")
+                }
+
                 if (conferenceInfo != null) {
                     conferenceInfo.subject
                 } else {

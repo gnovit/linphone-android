@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-<!ENTITY appName "Linphone">
+<!ENTITY appName "Vozer">
 ]>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="service_name">&appName; 服務</string>
@@ -614,7 +614,7 @@
     <string name="conference_participants_title">參與者（%d）</string>
     <string name="conference_first_to_join">您是第一個加入通話的與會者</string>
     <string name="conference_last_user">其他與會者皆已離開群組通話</string>
-    <string name="assistant_read_and_agree_terms">我接受 Belledonne Communications 的%1$s及%2$s</string>
+    <string name="assistant_read_and_agree_terms">我接受 Gnovit Corporate Communications Solutions 的%1$s及%2$s</string>
     <string name="call_settings_redirect_to_voice_mail_declined_calls_title">將拒接的通話重新導向至語音信箱 URI</string>
     <string name="call_action_calls_list">通話清單</string>
     <string name="call_action_numpad">數字鍵</string>
